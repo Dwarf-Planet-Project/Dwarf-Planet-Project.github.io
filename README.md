@@ -1,1 +1,1 @@
-warf-Planet-Project.github.io
+Website of the Dwarf-Planet-Project
