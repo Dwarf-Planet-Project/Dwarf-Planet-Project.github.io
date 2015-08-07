@@ -24,21 +24,53 @@
 </div>
 
 	<div class="project">
-		<p>Current module for mission analysis. A new module for the thermal design of spacecrafts is under heavy development. A detailed roadmap of the project can be found at the project website.</p>
+		<p>Currently the software only features a module for mission analysis which was inherited from the previous 
+		   Space Trajectory Analysis Tool by ESA which has already been updated to compile despite an untouched code 
+		   base since 2011 on current machines. The source code already compiles on Gentoo Linux and Ubuntu Linux. 
+		   It is planned to revise the code to also support other Linux distributions, Windows and Mac OS X. Starting 
+		   from successful builds on various platforms, the code base will be upgraded to replace the currently used
+		   Qt4 with the latest Qt5 library. Further modifications will include the seperation of the code base into 
+		   two parts, one handling the computations involved in the software, and the other providing a graphical 
+		   user interface. Based on this framework more modules will be developed to cover more aspects of the design
+		   of spacecrafts and space missions. A non-exclusive list of considered modules include:
+		   <ul>
+			<li> simulation of conditions during re-entry </li>
+			<li> simulation of the thermal design of the spacecraft </li>
+			<li> simulation of the damage by space debris </li>
+			<li> simulation of the attitude and orbital control system </li>
+			<li> simulation of particle radiation </li>
+			<li> simulation of rocket engines </li>
+			<li> simulation of on-board control systems </li>
+			<li> simulation of vibrations during launch phase </li>
+			<li> simulation of electromagnetic compatibility </li>
+		   </ul>
+		   Efforts in the project are currently focused on the evaluation of appropriate software libraries for the
+		   different tasks. After completion an environment will be designed to combine the different libraries in
+		   a proposed co-simulation environment to allow coupled simulations of different solvers. </p>
 	</div>
 
-<div id="project-roadmap" class="bg">
+<div id="project-rddoadmap" class="bg">
 	<h2>Roadmap</h2>
 </div>
 	<div class="roadmap">
-		<p> </p>
+		<p>
+			<ul> 
+				<li> alpha version 0.1.0: successful build and packaging of current code base on all major supported platforms (50 percent complete) </li>
+				<li> alpha version 0.1.1: restructured code base in simulation code and graphical user interface code</li>
+				<li> alpha version 0.2: new graphical user interface based on Qt 5</li>
+				<li> alpha version 0.3: introduction of the thermal analysis tool</li>
+			</ul>
+		</p>
 	</div>
 
 <div id="project-downloads" class="bg">
         <h2>Downloads</h2>
 </div>
         <div class="download">
-	        <p> </p>
+	        <p>Currently the software is only distributed in the form of the git repository hosted at 
+		   <a href="https://github.com/Dwarf-Planet-Project/SpaceDesignTool/">Github</a>. Packages 
+		   for Debian based systems, Windows and  Mac OS X are currently work in progress and will 
+		   be provided here when the packaging process is completed.  </p>
 	</div>
 
 <div id="project-license" class="bg">
@@ -54,7 +86,12 @@
 </div>
 
 	<div class="requirements">
-		<p> </p>
+		<p>
+			Current dependencies include: 
+			<ul>
+				<li> Qt 4.86 </li>
+			</ul>
+		</p>
 	</div>
 
 <div id="Contact" class="bg">
